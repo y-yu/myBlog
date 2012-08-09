@@ -1,0 +1,2 @@
+%.html: ./articles/%.md
+	perl ./script/preview.pl $< $@
