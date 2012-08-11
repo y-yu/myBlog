@@ -1,0 +1,3 @@
+%.md: ../src/%.md
+	perl ../script/del_nl.pl $< $@
+

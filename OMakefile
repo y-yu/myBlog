@@ -1,2 +1,4 @@
-%.html: ./articles/%.md
+%.html: ./articles/%.md ./src/%.md
 	perl ./script/preview.pl $< $@
+
+.SUBDIRS: articles
