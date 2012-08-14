@@ -11,10 +11,11 @@ say $fh '<link href="./css/uv_active4d.css" rel="stylesheet" type="text/css" />'
 say $fh '<link href="./css/documentation.css" media="screen" rel="stylesheet" type="text/css">';
 say $fh '<link href="./css/pygments.css" media="screen" rel="stylesheet" type="text/css">';
 say $fh '<link href="./css/documentation.css" media="screen" rel="stylesheet" type="text/css">';
-say $fh '</head><body>';
+say $fh '<link href="./css/my.css" media="screen" rel="stylesheet" type="text/css">';
+say $fh '</head><body><div id="content">';
 
 say $fh $result;
 
-say $fh '</body></html>';
+say $fh '</div></body></html>';
 
 close $fh;
