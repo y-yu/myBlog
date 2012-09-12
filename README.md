@@ -28,6 +28,7 @@ GitHubの _ISSUE_ よりも、Twitter（[@yoshimura_yuu](https://twitter.com/yos
 ## 記事リスト
 * [delete_newline.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/delete_newline.md)
 * [jbk.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/jbk.md)
+* [jbook.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/jbook.md)
 * [make_readme.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/make_readme.md)
 * [novel.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/novel.md)
 * [sao_1.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/sao_1.md)
