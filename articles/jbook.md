@@ -70,6 +70,115 @@
 
 `\parskip`は段落間の幅。`\parindent`は段落一文字目のインデント。
 
+## レイアウト
+
+
+### \@evenhead \@oddhead \@evenfoot \@oddfoot
+
+
+* `\@evenhead` : 奇数ページのヘッダ
+* `\@oddhead` : 偶数ページのヘッダ
+* `\@evenfoot` : 奇数ページのフッタ
+* `\@oddfoot` : 偶数のページのフッタ
+
+
+### \ps@plain
+
+
+フッタにページ番号を出力する。
+
+```tex
+\def\ps@plain{\let\@mkboth\@gobbletwo
+   \let\ps@jpl@in\ps@plain
+   \let\@oddhead\@empty
+   \def\@oddfoot{\reset@font\hfil\thepage\hfil}%
+   \let\@evenhead\@empty
+   \let\@evenfoot\@oddfoot}
+```
+
+
+### \ps@jpl@in
+
+
+`\tableofcontents`や`\theindex`で使われるページレイアウト。
+
+### \ps@headnombre
+
+
+ヘッダにページ番号を出力する。
+
+```tex
+\def\ps@headnombre{\let\@mkboth\@gobbletwo
+    \let\ps@jpl@in\ps@headnombre
+  \def\@evenhead{\thepage\hfil}%
+  \def\@oddhead{\hfil\thepage}%
+```
+
+
+### \ps@footnombre
+
+
+フッタにページ番号を出力する。
+
+```tex
+\def\ps@footnombre{\let\@mkboth\@gobbletwo
+    \let\ps@jpl@in\ps@footnombre
+  \def\@evenfoot{\thepage\hfil}%
+  \def\@oddfoot{\hfil\thepage}%
+  \let\@oddhead\@empty\let\@evenhead\@empty}
+```
+
+
+若干`\ps@plain`と違う。
+
+### \ps@headings
+
+
+ヘッダに`\thechapter`とページ番号に入れる。
+
+```tex
+% not two side
+\def\ps@headings{\let\ps@jpl@in\ps@headnombre
+  \let\@oddfoot\@empty
+  \def\@oddhead{{\rightmark}\hfil\thepage}%
+  \let\@mkboth\markboth
+\def\chaptermark##1{\markright{%
+  \ifnum \c@secnumdepth >\m@ne
+        \if@mainmatter
+      \@chapapp\thechapter\@chappos\hskip1zw
+        \fi
+  \fi
+  ##1}}%
+}
+```
+
+
+### \ps@bothstyle
+
+
+ヘッダに見出し、フッタにページ番号を出力する。
+
+```tex
+\def\ps@bothstyle{\let\ps@jpl@in\ps@footnombre
+  \def\@oddhead{\hfil\rightmark}%
+  \def\@oddfoot{\hfil\thepage}%
+  \let\@mkboth\markboth
+\def\chaptermark##1{\markright{%
+   \ifnum \c@secnumdepth >\m@ne
+       \if@mainmatter
+       \@chapapp\thechapter\@chappos\hskip1zw
+       \fi
+   \fi
+   ##1}}%
+}
+```
+
+
+### \ps@myheadings
+
+
+ユーザがページスタイルを作る時の雛形。
+
 ## ユーティリティ
 
 
@@ -77,6 +186,16 @@
 
 
 一時的に寸法を格納するレジスタ。
+
+### @gobbletwo
+
+
+何もしない。
+
+### @empty
+
+
+ヘッダやフッタに何も出力しない。
 
 ## コマンド
 
@@ -100,4 +219,14 @@
 
 
 用紙サイズの指定に用いている。
+
+### \thispagestyle
+
+
+そのページスタイルを指定する。全てのページにスタイルを適用する場合は、`\pagestyle`を使う。
+
+**引数**
+
+1. ページスタイル
+
 
