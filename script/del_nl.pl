@@ -8,6 +8,8 @@ my $src = 0;
 my $res = "";
 
 for (@lines) {
+	s/\t/    /g;
+
 	if ($src) {
 		if (m/^```/) {
 			$src = 0;

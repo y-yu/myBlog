@@ -34,3 +34,4 @@ GitHubの _ISSUE_ よりも、Twitter（[@yoshimura_yuu](https://twitter.com/yos
 * [sao_1.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/sao_1.md)
 * [startup.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/startup.md)
 * [tdd_js.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/tdd_js.md)
+* [tex.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/tex.md)
