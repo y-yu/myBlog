@@ -2,6 +2,8 @@
 
 この記事は[TeX & LaTeX Advent Calendar](http://atnd.org/events/34318)における、九日目の記事です。
 前日の記事は[Ubuntu 12.04/Debian Squeeze での TeXLive (>=2012) 環境](http://uwabami.junkhub.org/log/20121208p01.html)です。
+次の記事は[jsdvi - JavaScriptでdviプレビューアを書いてみるというネタ](http://naoyat.hatenablog.jp/entry/2012/12/10/000000)
+です。
 
 ## 経緯
 
