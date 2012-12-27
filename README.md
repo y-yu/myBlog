@@ -26,7 +26,7 @@ _ISSUE_ へ投げるのが宜しいと思います。プルリクしたいとい
 GitHubの _ISSUE_ よりも、Twitter（[@yoshimura_yuu](https://twitter.com/yoshimura_yuu)）へ投げた方が早いと思いますので、そちらへお願いします。
 
 ## 記事リスト
-* [2semester.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/2semester.md)
+* [Serzone.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/Serzone.md)
 * [delete_newline.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/delete_newline.md)
 * [jbk.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/jbk.md)
 * [jbook.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/jbook.md)
@@ -34,6 +34,9 @@ GitHubの _ISSUE_ よりも、Twitter（[@yoshimura_yuu](https://twitter.com/yos
 * [make_readme.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/make_readme.md)
 * [novel.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/novel.md)
 * [sao_1.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/sao_1.md)
+* [slideObject.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/slideObject.md)
 * [startup.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/startup.md)
+* [stepObject.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/stepObject.md)
 * [tdd_js.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/tdd_js.md)
 * [tex.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/tex.md)
+* [treeObject.md](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/treeObject.md)
