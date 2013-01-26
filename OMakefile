@@ -1,14 +1,14 @@
 %.html: ./articles/%.md ./src/%.md README.default.md
 	perl ./script/preview.pl $< $@
-	cp README.default.md README.md
-	section
-		fp = $(fopen $"README.md", a)
-		fprintln($(fp), $"## 記事リスト")
-		foreach(file, $(filter-out articles/OMakefile articles/OMakefile.omc, $(set $(ls $"articles"))))
-			fname = $(nth 1, $(split "/", $(file)))
-			fprintln($(fp), $"* [$(fname)](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/$(fname))")
-	perl ./script/del_nl.pl README.md README.md
-	perl ./script/preview.pl README.md README.html
+	#cp README.default.md README.md
+	#section
+	#	fp = $(fopen $"README.md", a)
+	#	fprintln($(fp), $"## 記事リスト")
+	#	foreach(file, $(filter-out articles/OMakefile articles/OMakefile.omc, $(set $(ls $"articles"))))
+	#		fname = $(nth 1, $(split "/", $(file)))
+	#		fprintln($(fp), $"* [$(fname)](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/$(fname))")
+	#perl ./script/del_nl.pl README.md README.md
+	#perl ./script/preview.pl README.md README.html
 
 .SUBDIRS: articles
-.DEFAULT: README.md
+# .DEFAULT: README.md
